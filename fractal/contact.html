@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Fractal One</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="description" content="" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<link media="all" rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/fontawesome-all.min.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/bootstrap-select.min.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/style.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/fonts.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/reset.css" type="text/css" />
+
+		<!-- Font -->
+		<!--<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">-->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	</head>
+	<body>
+		<header class="main-header">
+			<div class="header-wrapper d-flex d-flex-center">
+				<div class="logo-wrapper d-flex d-flex-center">
+					<a href="index.html" class="logo">
+						<img src="images/logo.svg" alt="">
+					</a>
+					<span>+4 16 85 471 780</span>
+				</div>
+				<div class="menu-wrapper d-flex d-flex-center">
+					<div class="nav-wrapper">
+						<nav class="menu-nav">
+							<a href="index.html">Buy/sell</a>
+							<a href="about.html">About us</a>
+							<a href="faq.html">FAQ</a>
+							<a href="account-verification.html">Verification</a>
+							<a href="contact.html" class="active">Contacts</a>
+						</nav>
+						<div class="menu-button">
+							<span class="line1"></span>
+							<span class="line2"></span>
+							<span class="line3"></span>
+						</div>
+					</div>
+					<div class="choose-wrapper lang-wrap">
+						<i class="material-icons">expand_more</i>
+						<select class="selectpicker" data-width="fit">
+							<option data-content='<div class="image-wrapper"><img src="images/flag-en.png" alt=""></div> <span>En</span>'></option>
+							<option data-content='<div class="image-wrapper"><img src="images/flag-nl.png" alt=""></div> <span>Nl</span>'></option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<div class="main-title-wrapper">
+				<span>Contact</span>
+			</div>
+			<section class="main-section">
+				<div class="wrapper">
+					<div class="contact-top-row row">
+						<div class="col-sm-6">
+							<div class="contact-col">
+								<h3 class="faq-title">Our contact details</h3>
+								<span>E: <a href="mailto:info@fractalone.io">info@fractalone.io</a></span>
+								<span>T: +4 16 85 471 780 </span>
+								<span>(Mon-Fri 9:30-13:00 / 14:00-18:00 CET)</span>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="contact-col">
+								<h3 class="faq-title">Office</h3>
+								<span>Fruitweg 24,</span>
+								<span>2321GK</span>
+								<span>The Netherlands</span>
+							</div>
+						</div>
+					</div>
+					<div class="map-wrapper">
+						<div id="map"></div>
+					</div>
+					<div class="contact-container">
+						<p>Most questions are answered in our <a href="faq.html">FAQ</a>. Feel free to contact us if you did not see your question (fully) answered on that page. If you have any questions about receiving bitcoins or your payout, please mention your bank account number and/or bitcoin address when contacting us. We are also available outside office hours and during the weekend until 22:00/10PM.</p>
+					</div>
+					<div class="contact-socials">
+						<p>Alternatively, you can reach us using one of the following instant messaging platforms:</p>
+						<div class="contact-social-wrapper">
+							<a href="#">
+								<img src="images/icon-facebook.png" alt="">
+								<span>Facebook Messenger</span>
+							</a>
+						</div>
+						<div class="contact-social-wrapper">
+							<a href="#">
+								<img src="images/icon-telegram.png" alt="">
+								<span>Telegram</span>
+							</a>
+						</div>
+					</div>
+					<div class="contact-container">
+						<p>Tip: Provide your bank account number or bitcoin address if your question is related to a payout or receiving bitcoins, this enables us to help you as fast as we can!</p>
+						<p>For the experts/nerds with IRC-clients we are available on irc.freenode.org during (sometimes outside) office hours: ##fractalone (Never send personal information to a public chat!)</p>
+						<p>You can also contact us by email (<a href="mailto:info@fractalone.io">info@fractalone.io</a>) or by using the contact form below. We aim for a response within one hour.</p>
+					</div>
+					<form action="#" class="contact-form">
+						<div class="contact-form-wrapper">
+							<input type="text" placeholder="Name">
+						</div>
+						<div class="contact-form-wrapper">
+							<input type="email" placeholder="Email">
+						</div>
+						<div class="contact-form-wrapper">
+							<textarea placeholder="Message"></textarea>
+						</div>
+						<div class="contact-form-wrapper">
+							<div class="checkbox">
+								<input id="checkbox1" name="check" type="checkbox">
+								<label for="checkbox1">
+									<span>I have read the <a href="faq.html">FAQ</a>, but I couldn't find my question.</span>
+								</label>
+							</div>
+						</div>
+						<div class="contact-form-wrapper">
+							<input type="submit" class="repeat-button" value="Search">
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="footer-wrapper">
+				<div class="row">
+					<div class="col-md-3 col-sm-4">
+						<div class="footer-col">
+							<a href="index.html" class="footer-logo">
+								<img src="images/logo-footer.png" alt="">
+							</a>
+							<span>© 2018 Fractal One</span>
+							<div class="social-wrapper">
+								<a href="#">
+									<i class="fab fa-facebook-f"></i>
+								</a>
+								<a href="#">
+									<i class="fab fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fab fa-linkedin-in"></i>
+								</a>
+								<a href="#">
+									<i class="fab fa-youtube"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-9 col-sm-8 padding_res">
+						<div class="row footer-lists">
+							<div class="col-md-3 col-sm-6">
+								<div class="footer-col">
+									<h3>Information</h3>
+									<ul>
+										<li><a href="#">What is bitcoin?</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="footer-col">
+									<h3>Useful links</h3>
+									<ul>
+										<li><a href="#">Customer Reviews</a></li>
+										<li><a href="#">Helpdesk</a></li>
+										<li><a href="#">Customer Support</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="footer-col">
+									<h3>Languages</h3>
+									<ul>
+										<li>
+											<a href="#">
+												<img src="images/flag-en.png" alt="">
+												English
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="images/flag-nl.png" alt="">
+												Nederlands
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="footer-col">
+									<h3></h3>
+									<ul>
+										<li><a href="#">General conditions</a></li>
+										<li><a href="#">Terms and Condition</a></li>
+										<li><a href="#">Privacy</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Include script -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<script type="text/javascript" src="js/lib/bootstrap-select.min.js"></script>
+		<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/google-maps.js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWCcMHWubtVjs2FwNPRrfOh-k1z1rkA_Q&callback=initMap" type="text/javascript"></script>
+	</body>
+</html>

@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Fractal One</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="description" content="" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<link media="all" rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/fontawesome-all.min.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/bootstrap-select.min.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/style.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/fonts.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/reset.css" type="text/css" />
+
+		<!-- Font -->
+		<!--<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">-->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	</head>
+	<body>
+		<header class="main-header">
+			<div class="header-wrapper d-flex d-flex-center">
+				<div class="logo-wrapper d-flex d-flex-center">
+					<a href="index.html" class="logo">
+						<img src="images/logo.svg" alt="">
+					</a>
+					<span>+4 16 85 471 780</span>
+				</div>
+				<div class="menu-wrapper d-flex d-flex-center">
+					<div class="nav-wrapper">
+						<nav class="menu-nav">
+							<a href="index.html" class="active">Buy/sell</a>
+							<a href="about.html">About us</a>
+							<a href="faq.html">FAQ</a>
+							<a href="account-verification.html">Verification</a>
+							<a href="contact.html">Contacts</a>
+						</nav>
+						<div class="menu-button">
+							<span class="line1"></span>
+							<span class="line2"></span>
+							<span class="line3"></span>
+						</div>
+					</div>
+					<div class="choose-wrapper lang-wrap">
+						<i class="material-icons">expand_more</i>
+						<select class="selectpicker" data-width="fit">
+							<option data-content='<div class="image-wrapper"><img src="images/flag-en.png" alt=""></div> <span>En</span>'></option>
+							<option data-content='<div class="image-wrapper"><img src="images/flag-nl.png" alt=""></div> <span>Nl</span>'></option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<section class="hero-wrapper">
+				<div class="wrapper">
+					<div class="buy-section">
+						<div class="selects-container">
+							<div class="buy-top-selects">
+								<div class="select-col select-col-first">
+									<div class="choose-wrapper buy-wrap">
+										<i class="material-icons">expand_more</i>
+										<select class="selectpicker" data-width="fit">
+											<option data-content='<span class="select-span buy-select">Buy</span>'></option>
+											<option data-content='<span class="select-span sell-select">Sell</span>'></option>
+										</select>
+									</div>
+								</div>
+								<div class="select-col select-col-second">
+									<div class="choose-wrapper buy-wrap crypto-wrap">
+										<i class="material-icons">expand_more</i>
+										<select class="selectpicker" data-width="fit">
+											<option data-content='<div class="image-wrapper"><img src="images/icon-btc.png" alt=""></div> <span>BTC</span>'></option>
+											<option data-content='<div class="image-wrapper"><img src="images/icon-eth.png" alt=""></div> <span>ETH</span>'></option>
+											<option data-content='<div class="image-wrapper"><img src="images/icon-lte.png" alt=""></div> <span>LTE</span>'></option>
+										</select>
+									</div>
+								</div>
+								<div class="select-col select-col-third">
+									<div class="data-wrapper">
+										<input type="number" value="5.00000000" placeholder="">
+									</div>
+								</div>
+								<div class="select-col select-col-fourth">
+									<i class="material-icons">arrow_forward</i>
+								</div>
+								<div class="select-col select-col-fifth">
+									<div class="choose-wrapper buy-wrap currency-wrap">
+										<i class="material-icons">expand_more</i>
+										<select class="selectpicker" data-width="fit">
+											<option data-content='<div class="image-wrapper"><img src="images/icon-euro.png" alt=""></div> <span>EUR</span>'></option>
+											<option data-content='<div class="image-wrapper"><img src="images/icon-usd.png" alt=""></div> <span>USD</span>'></option>
+										</select>
+									</div>
+								</div>
+								<div class="select-col select-col-sixth">
+									<div class="data-wrapper">
+										<input type="number" value="35186.21">
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Buy section start -->
+						<div class="bottom-selects buy-bottom-selects">
+							<div class="select-row-wrapper d-flex d-flex-center">
+								<div class="select-col">
+									<div class="dropdown">
+										<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdown-wrapper" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											<span>Ideal</span>
+											<i class="material-icons">expand_more</i>
+										</button>
+										<div class="dropdown-menu" aria-labelledby="dropdown-wrapper">
+											<a class="dropdown-item" href="#">Bankcontact</a>
+											<a class="dropdown-item" href="#">MyBank</a>
+										</div>
+									</div>
+								</div>
+								<div class="select-col">
+									<input type="text" placeholder="wallet address">
+								</div>
+								<div class="select-col">
+									<div class="dropdown">
+										<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdown-wrapper" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											<span>Choose bank</span>
+											<i class="material-icons">expand_more</i>
+										</button>
+										<div class="dropdown-menu" aria-labelledby="dropdown-wrapper">
+											<a class="dropdown-item" href="#">ABN AMRO</a>
+											<a class="dropdown-item" href="#">ASN Bank</a>
+											<a class="dropdown-item" href="#">Bunq</a>
+											<a class="dropdown-item" href="#">ING</a>
+											<a class="dropdown-item" href="#">Knab</a>
+											<a class="dropdown-item" href="#">Rabobank</a>
+											<a class="dropdown-item" href="#">RegioBank</a>
+											<a class="dropdown-item" href="#">SNS bank</a>
+											<a class="dropdown-item" href="#">Triodos bank</a>
+											<a class="dropdown-item" href="#">van Lanschot</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="checkbox-wrapper">
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="checkbox">
+											<input id="checkbox1" name="check" type="radio" checked>
+											<label for="checkbox1">
+												<span>I understand that I buy bitcoins and agree with the terms</span>
+											</label>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="checkbox">
+											<input id="checkbox2" name="check" type="radio">
+											<label for="checkbox2">
+												<span>Do you order for the first time?</span>
+												<p>One-off additional verification is required for new customers. I understand.</p>
+												<a href="#">More information.</a>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="repeat-button-wrapper">
+							<a href="#" class="repeat-button buy-button" data-toggle="modal" data-target="#verification-modal">Buy</a>
+						</div>
+						<!-- Buy section end -->
+
+						<!-- Sell section start -->
+						<!--<div class="bottom-selects sell-bottom-selects">
+							<div class="select-row-wrapper d-flex d-flex-center">
+								<div class="select-col">
+									<input type="text" placeholder="Iban">
+								</div>
+								<div class="select-col">
+									<input type="text" placeholder="Owner name">
+								</div>
+								<div class="select-col">
+									<input type="text" placeholder="City of residence">
+								</div>
+							</div>
+							<div class="select-row-wrapper d-flex d-flex-center">
+								<div class="select-col">
+									<div class="dropdown">
+										<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdown-wrapper" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											<span>Country</span>
+											<i class="material-icons">expand_more</i>
+										</button>
+										<div class="dropdown-menu" aria-labelledby="dropdown-wrapper">
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">Something else here</a>
+										</div>
+									</div>
+								</div>
+								<div class="select-col">
+									<input type="email" placeholder="Email">
+								</div>
+								<div class="select-col">
+									<input type="email" placeholder="wallet address">
+									<div class="hint-wrapper info">
+										<i class="material-icons">help</i>
+										<div class="hint-container">
+											<p>Should an error occur during the transaction, we will return the bitcoins to this address.</p>
+										</div>
+									</div> &lt;!&ndash; alert classes - class="danger", class="success", class="info" &ndash;&gt;
+								</div>
+							</div>
+							<div class="checkbox-wrapper">
+								<div class="checkbox text-center">
+									<input id="checkbox5" name="check" type="checkbox">
+									<label for="checkbox5">
+										<span>I agree to the terms and conditions.</span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="repeat-button-wrapper">
+							<a href="#" class="repeat-button buy-button" data-toggle="modal" data-target="#verification-modal">Sell</a>
+						</div>-->
+						<!-- Sell section end -->
+					</div>
+
+
+					<div class="online-info-wrapper">
+						<div class="online-info-row">
+							<div class="online-info-col">
+								<div class="online-info-top">
+									<div class="online-info-icon">
+										<img src="images/icon-btc.png" alt="">
+									</div>
+									<span>BTC</span>
+								</div>
+								<div class="online-info-body down">
+									<div class="online-info-arrow">
+										<i class="material-icons">arrow_downward</i>
+									</div>
+									<div class="online-info-text">
+										<span>8510.49$</span>
+										<em>-161.05</em>
+										<i>-10%</i>
+									</div>
+								</div>
+							</div>
+							<div class="online-info-col">
+								<div class="online-info-top">
+									<div class="online-info-icon">
+										<img src="images/icon-eth.png" alt="">
+									</div>
+									<span>ETH</span>
+								</div>
+								<div class="online-info-body down">
+									<div class="online-info-arrow">
+										<i class="material-icons">arrow_downward</i>
+									</div>
+									<div class="online-info-text">
+										<span>832.25$</span>
+										<em>-23.93</em>
+										<i>-0.3%</i>
+									</div>
+								</div>
+							</div>
+							<div class="online-info-col">
+								<div class="online-info-top">
+									<div class="online-info-icon">
+										<img src="images/icon-xrp.png" alt="">
+									</div>
+									<span>XRP</span>
+								</div>
+								<div class="online-info-body">
+									<div class="online-info-arrow">
+
+									</div>
+									<div class="online-info-text">
+										<span>1$</span>
+										<em>+0</em>
+										<i>-0%</i>
+									</div>
+								</div>
+							</div>
+							<div class="online-info-col">
+								<div class="online-info-top">
+									<div class="online-info-icon">
+										<img src="images/icon-lte.png" alt="">
+									</div>
+									<span>LTC</span>
+								</div>
+								<div class="online-info-body down">
+									<div class="online-info-arrow">
+										<i class="material-icons">arrow_downward</i>
+									</div>
+									<div class="online-info-text">
+										<span>578.87$</span>
+										<em>-217.59</em>
+										<i>-24%</i>
+									</div>
+								</div>
+							</div>
+							<div class="online-info-col">
+								<div class="online-info-top">
+									<div class="online-info-icon">
+										<img src="images/icon-dash.png" alt="">
+									</div>
+									<span>DASH</span>
+								</div>
+								<div class="online-info-body down">
+									<div class="online-info-arrow">
+										<i class="material-icons">arrow_downward</i>
+									</div>
+									<div class="online-info-text">
+										<span>584.41$</span>
+										<em>-27.88</em>
+										<i>-3%</i>
+									</div>
+								</div>
+							</div>
+							<div class="online-info-col">
+								<div class="online-info-top">
+									<div class="online-info-icon">
+										<img src="images/icon-neo.png" alt="">
+									</div>
+									<span>NEO</span>
+								</div>
+								<div class="online-info-body up">
+									<div class="online-info-arrow">
+										<i class="material-icons">arrow_upward</i>
+									</div>
+									<div class="online-info-text">
+										<span>0.1488$</span>
+										<em>+0.0064</em>
+										<i>+4.4944%</i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="news-section">
+				<div class="wrapper">
+					<h2 class="news-title">News</h2>
+					<a href="#" class="news-wrapper">
+						<div class="d-flex">
+							<div class="news-date">
+								<span>8 Jan</span>
+								<em>18:33</em>
+							</div>
+							<div class="news-info">
+								<h3>Urgent: Update required for Electrum</h3>
+								<p>It became apparent this weekend that the commonly used Electrum wallet has a vulnerability that potentially allows random websites to steal the wallet file through Javascript. It’s important for users to avoid opening the Electrum wallet. If you happen to have the wallet active, it’s stringent to immediately close it. An update has been released for Electrum, which addresses the security issue.</p>
+							</div>
+						</div>
+						<div class="read-more-button">
+							<span>read more</span>
+							<i class="material-icons">arrow_forward</i>
+						</div>
+					</a>
+					<a href="#" class="news-wrapper">
+						<div class="d-flex">
+							<div class="news-date">
+								<span>27 Dec</span>
+								<em>10:15</em>
+							</div>
+							<div class="news-info">
+								<h3>Temporary service-adjustments</h3>
+								<p>Due to the great interest in Bitcoin and the associated large volume of new customers, we regret to conclude that we currently have insufficient capacity to maintain the service level that we stand for. Our team continually works overtime and our servers are similarly strained.</p>
+							</div>
+						</div>
+						<div class="read-more-button">
+							<span>read more</span>
+							<i class="material-icons">arrow_forward</i>
+						</div>
+					</a>
+					<a href="#" class="news-wrapper">
+						<div class="d-flex">
+							<div class="news-date">
+								<span>7 aug</span>
+								<em>8:40</em>
+							</div>
+							<div class="news-info">
+								<h3>Vodafone herinnering factuur</h3>
+								<p>Er zijn momenteel helaas phishing (oplichting) e-mails in omloop. Deze e-mails lijken afkomsting te zijn van T-Mobile. In de e-mails wordt er onder andere gesproken over een betalingsachterstand en wordt u gevraagd deze te voldoen via iDEAL. Na het klikken op 'online betalen' in de e-mail, komt u op onze site uit.</p>
+							</div>
+						</div>
+						<div class="read-more-button">
+							<span>read more</span>
+							<i class="material-icons">arrow_forward</i>
+						</div>
+					</a>
+				</a>
+			</section>
+		</main>
+
+		<footer>
+			<div class="footer-wrapper">
+				<div class="row">
+					<div class="col-md-3 col-sm-4">
+						<div class="footer-col">
+							<a href="index.html" class="footer-logo">
+								<img src="images/logo-footer.png" alt="">
+							</a>
+							<span>© 2018 Fractal One</span>
+							<div class="social-wrapper">
+								<a href="#">
+									<i class="fab fa-facebook-f"></i>
+								</a>
+								<a href="#">
+									<i class="fab fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fab fa-linkedin-in"></i>
+								</a>
+								<a href="#">
+									<i class="fab fa-youtube"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-9 col-sm-8 padding_res">
+						<div class="row footer-lists">
+							<div class="col-md-3 col-sm-6">
+								<div class="footer-col">
+									<h3>Information</h3>
+									<ul>
+										<li><a href="#">What is bitcoin?</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="footer-col">
+									<h3>Useful links</h3>
+									<ul>
+										<li><a href="#">Customer Reviews</a></li>
+										<li><a href="#">Helpdesk</a></li>
+										<li><a href="#">Customer Support</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="footer-col">
+									<h3>Languages</h3>
+									<ul>
+										<li>
+											<a href="#">
+												<img src="images/flag-en.png" alt="">
+												English
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="images/flag-nl.png" alt="">
+												Nederlands
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="footer-col">
+									<h3></h3>
+									<ul>
+										<li><a href="#">General conditions</a></li>
+										<li><a href="#">Terms and Condition</a></li>
+										<li><a href="#">Privacy</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Modal Start -->
+		<div id="verification-modal" class="modal fade verification-modal" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<a href="#" class="close-modal" data-dismiss="modal">
+							<i class="material-icons">close</i>
+						</a>
+						<h4 class="modal-title">Verification</h4>
+					</div>
+					<div class="modal-body">
+						<div class="steps-wrapper d-flex">
+							<a href="#" class="step-col active">
+								<span>Step 1</span>
+								<i class="material-icons">arrow_forward</i>
+							</a>
+							<a href="#" class="step-col">
+								<span>Step 2</span>
+								<i class="material-icons">arrow_forward</i>
+							</a>
+							<a href="#" class="step-col">
+								<span>Step 3</span>
+							</a>
+						</div>
+
+						<!-- Step 1 start-->
+						<form action="#" class="form-verification">
+							<span>verify your email</span>
+							<div class="form-row">
+								<input type="email" placeholder="Email">
+							</div>
+							<p>Follow the link from the letter</p>
+							<div class="form-submit">
+								<input type="submit" value="Next" class="repeat-button">
+							</div>
+						</form>
+						<!-- Step 1 end-->
+
+						<!-- Step 2 start-->
+						<!--<form action="#" class="form-verification">
+							<span>verify your IBAN & <br>Mobile Number</span>
+							<div class="form-row">
+								<input type="email" placeholder="Email" value="test@gmail.com">
+								<i class="material-icons check">check</i>
+							</div>
+							<div class="form-row">
+								<input type="number" placeholder="IBAN">
+							</div>
+							<div class="form-row">
+								<input type="number" placeholder="Mobile number">
+							</div>
+							<div class="form-submit">
+								<input type="submit" value="Next" class="repeat-button">
+							</div>
+						</form>-->
+						<!-- Step 2 end-->
+
+						<!-- Step 3 start-->
+						<!--<form action="#" class="form-verification">
+							<span>Verification</span>
+							<div class="form-row">
+								<input type="email" placeholder="Email" value="test@gmail.com">
+								<i class="material-icons check">check</i>
+							</div>
+							<div class="form-row">
+								<input type="number" placeholder="IBAN">
+								<i class="material-icons time">access_time</i>
+							</div>
+							<div class="form-row">
+								<input type="number" placeholder="Sms code">
+							</div>
+							<div class="form-row">
+								<div class="resend-wrapper">
+									<i class="material-icons renew">autorenew</i>
+									<a href="#">Resend SMS</a>
+								</div>
+							</div>
+							<div class="form-submit">
+								<input type="submit" value="Next" class="repeat-button">
+							</div>
+						</form>-->
+						<!-- Step 3 end-->
+
+						<!-- Confirmation manual start -->
+						<!--<div class="confirmation-wrapper">
+							<span class="modal-heading">Confirmation / Manual</span>
+							<div class="confirm-time">
+								<i class="material-icons">access_time</i>
+								<span>5:59</span>
+							</div>
+							<p>Transaction awaits confirmation</p>
+							<p>You can close the window, after confirmation we will inform you</p>
+							<a href="#" class="repeat-button">Close</a>
+						</div>-->
+						<!-- Confirmation manual end -->
+
+						<!-- Confirmation auto start -->
+						<!--<div class="confirmation-wrapper">
+							<span class="modal-heading">Confirmation / Auto</span>
+							<div class="confirm-time">
+								<i class="material-icons">access_time</i>
+								<span>5:59</span>
+							</div>
+							<p>The transaction is automatic</p>
+							<p>You can close the window, after confirmation we will inform you</p>
+							<a href="#" class="repeat-button">Close</a>
+						</div>-->
+						<!-- Confirmation auto end -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal End -->
+
+		<!-- Include script -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<script type="text/javascript" src="js/lib/bootstrap-select.min.js"></script>
+		<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
