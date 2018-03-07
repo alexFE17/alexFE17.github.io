@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Fractal One</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="description" content="" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<link media="all" rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/fontawesome-all.min.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/bootstrap-select.min.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/style.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/fonts.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/reset.css" type="text/css" />
+
+		<!-- Font -->
+		<!--<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">-->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	</head>
+	<body>
+		<header class="main-header main-header-box-shadow">
+			<div class="header-wrapper d-flex d-flex-center">
+				<div class="logo-wrapper d-flex d-flex-center">
+					<a href="index.html" class="logo logo-admin">
+						<img src="images/logo-admin.svg" alt="">
+						<span>Admin page</span>
+					</a>
+				</div>
+				<div class="menu-wrapper d-flex d-flex-center">
+					<div class="choose-wrapper lang-wrap">
+						<i class="material-icons">expand_more</i>
+						<select class="selectpicker" data-width="fit">
+							<option data-content='<div class="image-wrapper"><img src="images/flag-en.png" alt=""></div> <span>En</span>'></option>
+							<option data-content='<div class="image-wrapper"><img src="images/flag-nl.png" alt=""></div> <span>Nl</span>'></option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<div class="admin-wrapper">
+				<aside class="admin-aside">
+					<div class="dashboard-nav">
+						<a href="admin-page.html">
+							<div class="icon-wrap">
+								<i class="material-icons">trending_up</i>
+							</div>
+							<span>Main statistic</span>
+						</a>
+						<a href="admin-page2.html" class="active">
+							<div class="icon-wrap">
+								<div class="notification"></div>
+								<i class="material-icons">playlist_add</i>
+							</div>
+							<span>Request list</span>
+						</a>
+						<a href="admin-page3.html">
+							<div class="icon-wrap">
+								<i class="material-icons">playlist_add_check</i>
+							</div>
+							<span>Registered customer list</span>
+						</a>
+						<a href="admin-page4.html">
+							<div class="icon-wrap">
+								<i class="material-icons">done_all</i>
+							</div>
+							<span>Verification</span>
+						</a>
+						<a href="admin-page-faq.html">
+							<div class="icon-wrap">
+								<i class="material-icons">info</i>
+							</div>
+							<span>FAQ</span>
+						</a>
+						<a href="admin-page-news.html">
+							<div class="icon-wrap">
+								<i class="material-icons">subject</i>
+							</div>
+							<span>News</span>
+						</a>
+					</div>
+				</aside>
+				<div class="admin-dashboard">
+					<div class="admin-top-wrapper">
+						<div class="admin-info-left">
+							<div class="admin-panel-col">
+								<div class="choose-wrapper admin-select">
+									<i class="material-icons">expand_more</i>
+									<select class="selectpicker" data-width="fit">
+										<option data-content='<span>Buy</span>'></option>
+										<option data-content='<span>Sell</span>'></option>
+									</select>
+								</div>
+							</div>
+							<div class="checkbox-custom">
+								<input id="check1" class="checkbox-manual-auto" type="checkbox">
+								<label for="check1">
+									<span class="check"></span>
+									<em class="manual">Manually</em>
+									<em class="auto">Auto</em>
+								</label>
+							</div>
+						</div>
+						<div class="admin-info-right">
+							<div class="admin-panel-col">
+								<div class="choose-wrapper admin-select w160px">
+									<i class="material-icons">expand_more</i>
+									<select class="selectpicker" data-width="fit">
+										<option data-content='<span>Bankcontact</span>'></option>
+										<option data-content='<span>MyBank</span>'></option>
+										<option data-content='<span>Ideal</span>'></option>
+									</select>
+								</div>
+							</div>
+							<div class="admin-panel-col">
+								<div class="money-value">
+									<span class="currency">€</span>
+									<input type="number" value="100">
+								</div>
+							</div>
+							<div class="admin-panel-col">
+								<div class="money-value">
+									<span class="currency">€</span>
+									<input type="number" value="20000">
+								</div>
+							</div>
+							<div class="admin-panel-col">
+								<div class="choose-wrapper admin-select w130px">
+									<i class="material-icons">expand_more</i>
+									<select class="selectpicker" data-width="fit">
+										<option data-content='<span>1 month</span>'></option>
+										<option data-content='<span>2 month</span>'></option>
+										<option data-content='<span>3 month</span>'></option>
+										<option data-content='<span>...</span>'></option>
+									</select>
+								</div>
+							</div>							
+						</div>
+					</div>
+					<div class="admin-info-row-wrapper">
+						<div class="admin-info-row admin-info-row-click">
+							<div class="admin-info-col admin-info-date">
+								<span>25 Jan</span>
+								<em>17:15</em>
+							</div>
+							<div class="admin-info-col admin-info-fromto">
+								<div class="admin-info-fromto-col">
+									<div class="admin-info-icon">
+										<img src="images/icon-btc.png" alt="">
+									</div>
+									<div class="admin-info-text">
+										<span>BTC</span>
+										<em>0.00456</em>
+									</div>
+								</div>
+								<i class="material-icons">arrow_forward</i>
+								<div class="admin-info-fromto-col">
+									<div class="admin-info-icon">
+										<img src="images/icon-usd.png" alt="">
+									</div>
+									<div class="admin-info-text">
+										<span>USD</span>
+										<em>100</em>
+									</div>
+								</div>
+							</div>
+							<div class="admin-info-col admin-info-iban">
+								<div class="admin-check-wrapper">
+									<div class="admin-info-check">
+										<i class="material-icons check">check</i>
+									</div>
+									<div class="admin-info-text">
+										<span>449 xxx xxx xx</span>
+										<em>IBAN</em>
+									</div>
+								</div>
+							</div>
+							<div class="admin-info-col admin-info-valletaddr">
+								<span>1BQ9qza7fn9snSCyJQB3ZcN46biBtkt4ee</span>
+								<em>wallet address</em>
+							</div>
+							<div class="admin-info-col admin-info-approve">
+								<a href="" class="approve-button active">Approve</a>
+							</div>
+						</div>
+						<div class="admin-info-row-hide">
+							<div class="admin-info-row">
+								<div class="admin-info-col admin-info-date">
+
+								</div>
+								<div class="admin-info-col admin-info-fromto" style="display: block;">
+									<span>Alexander Butcher</span>
+									<mark>Owner name</mark>
+								</div>
+								<div class="admin-info-col admin-info-iban" style="display: block;">
+									<span>United Kingdom</span>
+									<mark>Country</mark>
+								</div>
+								<div class="admin-info-col admin-info-valletaddr">
+									<span>London</span>
+									<mark>City of residence</mark>
+								</div>
+								<div class="admin-info-col admin-info-approve">
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="admin-info-row-wrapper">
+						<div class="admin-info-row admin-info-row-click">
+							<div class="admin-info-col admin-info-date">
+								<span>21 Jan</span>
+								<em>13:01</em>
+							</div>
+							<div class="admin-info-col admin-info-fromto">
+								<div class="admin-info-fromto-col">
+									<div class="admin-info-icon">
+										<img src="images/icon-lte.png" alt="">
+									</div>
+									<div class="admin-info-text">
+										<span>LTC</span>
+										<em>0.00228</em>
+									</div>
+								</div>
+								<i class="material-icons">arrow_forward</i>
+								<div class="admin-info-fromto-col">
+									<div class="admin-info-icon">
+										<img src="images/icon-usd.png" alt="">
+									</div>
+									<div class="admin-info-text">
+										<span>USD</span>
+										<em>50</em>
+									</div>
+								</div>
+							</div>
+							<div class="admin-info-col admin-info-iban">
+								<div class="admin-check-wrapper">
+									<div class="admin-info-check">
+										<i class="material-icons time">access_time</i>
+									</div>
+									<div class="admin-info-text">
+										<span>449 xxx xxx xx</span>
+										<em>IBAN</em>
+									</div>
+								</div>
+							</div>
+							<div class="admin-info-col admin-info-valletaddr">
+								<span>1BQ9qza7fn9snSCyJQB3ZcN46biBtkt4ee</span>
+								<em>wallet address</em>
+							</div>
+							<div class="admin-info-col admin-info-approve">
+								<a href="" class="approve-button active">Approve</a>
+							</div>
+						</div>
+						<div class="admin-info-row-hide">
+							<div class="admin-info-row">
+								<div class="admin-info-col admin-info-date">
+
+								</div>
+								<div class="admin-info-col admin-info-fromto" style="display: block;">
+									<span>Alexander Butcher</span>
+									<mark>Owner name</mark>
+								</div>
+								<div class="admin-info-col admin-info-iban" style="display: block;">
+									<span>United Kingdom</span>
+									<mark>Country</mark>
+								</div>
+								<div class="admin-info-col admin-info-valletaddr">
+									<span>London</span>
+									<mark>City of residence</mark>
+								</div>
+								<div class="admin-info-col admin-info-approve">
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="admin-info-row-wrapper">
+						<div class="admin-info-row admin-info-row-click">
+							<div class="admin-info-col admin-info-date">
+								<span>5 Jan</span>
+								<em>10:05</em>
+							</div>
+							<div class="admin-info-col admin-info-fromto">
+								<div class="admin-info-fromto-col">
+									<div class="admin-info-icon">
+										<img src="images/icon-btc.png" alt="">
+									</div>
+									<div class="admin-info-text">
+										<span>BTC</span>
+										<em>0.00456</em>
+									</div>
+								</div>
+								<i class="material-icons">arrow_forward</i>
+								<div class="admin-info-fromto-col">
+									<div class="admin-info-icon">
+										<img src="images/icon-euro.png" alt="">
+									</div>
+									<div class="admin-info-text">
+										<span>EUR</span>
+										<em>80</em>
+									</div>
+								</div>
+							</div>
+							<div class="admin-info-col admin-info-iban">
+								<div class="admin-check-wrapper">
+									<div class="admin-info-check">
+										<i class="material-icons check">check</i>
+									</div>
+									<div class="admin-info-text">
+										<span>449 xxx xxx xx</span>
+										<em>IBAN</em>
+									</div>
+								</div>
+							</div>
+							<div class="admin-info-col admin-info-valletaddr">
+								<span>1BQ9qza7fn9snSCyJQB3ZcN46biBtkt4ee</span>
+								<em>wallet address</em>
+							</div>
+							<div class="admin-info-col admin-info-approve">
+								<a href="" class="approve-button active">Approve</a>
+							</div>
+						</div>
+						<div class="admin-info-row-hide">
+							<div class="admin-info-row">
+								<div class="admin-info-col admin-info-date">
+
+								</div>
+								<div class="admin-info-col admin-info-fromto" style="display: block;">
+									<span>Alexander Butcher</span>
+									<mark>Owner name</mark>
+								</div>
+								<div class="admin-info-col admin-info-iban" style="display: block;">
+									<span>United Kingdom</span>
+									<mark>Country</mark>
+								</div>
+								<div class="admin-info-col admin-info-valletaddr">
+									<span>London</span>
+									<mark>City of residence</mark>
+								</div>
+								<div class="admin-info-col admin-info-approve">
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- When select "auto" http://joxi.ru/Vm6K1xMTxeJ9K2 -->
+				</div>
+			</div>
+		</main>
+
+		<!-- Include script -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<script type="text/javascript" src="js/lib/moment.min.js"></script>
+		<script type="text/javascript" src="js/lib/chart.min.js"></script>
+		<script type="text/javascript" src="js/lib/bootstrap-datetimepicker.min.js"></script>
+		<script type="text/javascript" src="js/lib/bootstrap-select.min.js"></script>
+		<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
