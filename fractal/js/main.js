@@ -6,6 +6,16 @@ $(document).ready(function () {
         $(this).parents('.dropdown').find('.dropdown-toggle span').html(selText);
     });
 
+    // faq accordion
+    $('.faq-list li').on('click', function () {
+        $(this).toggleClass('active');
+        $(this).find('.faq-answer-container').slideToggle();
+    });
+
+    $('.faq-list li a').on('click', function (e) {
+       e.preventDefault();
+    });
+
     // bootstrap select
     $('.selectpicker').selectpicker();
 
